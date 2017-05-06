@@ -42,14 +42,56 @@ namespace CATM.DevTools.Utils
         }
 
         /// <summary>
-        /// Verifica si un Entero (Int) es mayor a otro Entero (Int)
+        /// Verifica si un Entero (Int) es menor o igual a otro Entero (Int)
         /// </summary>
         /// <param name="number">Entero (Int) a verificar</param>
         /// <param name="compare">Entero (Int) a comparar</param>
         /// <returns>Booleano</returns>
+        public static bool IsLessOrEqual(int number, int compare)
+        {
+            return number <= compare;
+        }
+
+        /// <summary>
+        /// Verifica si un Entero (Int) es mayor a otro Entero (Int)
+        /// </summary>
+        /// <param name="number">Entero (Int) a verificar</param>
+        /// <param name="compare">Entero (Int) a comparar</param>
+        /// <returns>Booleano (boolean)</returns>
         public static bool IsGreater(int number, int compare)
         {
             return number > compare;
+        }
+
+        /// <summary>
+        /// Verifica si un Entero (Int) es mayor o igual a otro Entero (Int)
+        /// </summary>
+        /// <param name="number">Entero (Int) a verificar</param>
+        /// <param name="compare">Entero (Int) a comparar</param>
+        /// <returns>Booleano (boolean)</returns>
+        public static bool IsGreaterOrEqual(int number, int compare)
+        {
+            return number >= compare;
+        }
+
+        /// <summary>
+        /// Obtiene un Booleano (boolean) que indica si un Número (Int) es Impar.
+        /// </summary>
+        /// <param name="number">Número a Comparar</param>
+        /// <returns>Booleano (boolean)</returns>
+        public static bool IsOdd(int number)
+        {
+            return (number % 2) != 0;
+        }
+
+        /// <summary>
+        /// Obtiene un Booleano (boolean) que indica si un Número (Int) es Par.
+        /// </summary>
+        /// <param name="number">Número a Comparar</param>
+        /// <returns>Booleano (boolean)</returns>
+        public static bool IsEven(int number)
+        {
+            return (number % 2) == 0;
         }
     }
 }
